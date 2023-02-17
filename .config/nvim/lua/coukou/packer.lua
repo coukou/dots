@@ -14,11 +14,37 @@ return require('packer').startup(function(use)
         requires = { {'nvim-lua/plenary.nvim'} }
     }
 
+    -- Explorer
+    use {
+        "nvim-neo-tree/neo-tree.nvim",
+        branch = "v2.x",
+        requires = { 
+            "nvim-lua/plenary.nvim",
+            "nvim-tree/nvim-web-devicons", -- not strictly required, but recommended
+            "MunifTanjim/nui.nvim",
+        }
+    }
+
     -- colors
     use { "catppuccin/nvim", as = "catppuccin" }
 
     -- Treesitter
     use { "nvim-treesitter/nvim-treesitter", {run = ":TSUpdate"}}
+
+    -- Comment
+    use {
+        'numToStr/Comment.nvim',
+        config = function()
+            require('Comment').setup()
+        end
+    }
+
+    -- toggleterm
+    use {
+        "akinsho/toggleterm.nvim", tag = '*', config = function()
+            require("toggleterm").setup()
+        end
+    }
 
     -- LSP
     use {
@@ -42,4 +68,23 @@ return require('packer').startup(function(use)
             {'rafamadriz/friendly-snippets'},
         }
     }
+
+    -- code action
+    require('packer').use({
+      'weilbith/nvim-code-action-menu',
+    })
+
+    -- Diagnostic
+    use {
+        "folke/trouble.nvim",
+        requires = "nvim-tree/nvim-web-devicons",
+        config = function()
+            require("trouble").setup {
+                -- your configuration comes here
+                -- or leave it empty to use the default settings
+                -- refer to the configuration section below
+            }
+        end
+    }
+
 end)
