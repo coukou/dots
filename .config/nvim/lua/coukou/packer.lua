@@ -69,6 +69,15 @@ return require('packer').startup(function(use)
         }
     }
 
+    -- Format & Lint
+    use({
+        "jose-elias-alvarez/null-ls.nvim",
+        config = function()
+            require("null-ls").setup()
+        end,
+        requires = { "nvim-lua/plenary.nvim" },
+    })
+
     -- code action
     require('packer').use({
       'weilbith/nvim-code-action-menu',
@@ -85,6 +94,11 @@ return require('packer').startup(function(use)
                 -- refer to the configuration section below
             }
         end
+    }
+
+    -- editorconfig
+    use {
+        "gpanders/editorconfig.nvim"
     }
 
 end)

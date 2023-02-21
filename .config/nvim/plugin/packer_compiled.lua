@@ -150,6 +150,11 @@ _G.packer_plugins = {
     path = "/home/coukou/.local/share/nvim/site/pack/packer/start/nvim-cmp",
     url = "https://github.com/hrsh7th/nvim-cmp"
   },
+  ["nvim-code-action-menu"] = {
+    loaded = true,
+    path = "/home/coukou/.local/share/nvim/site/pack/packer/start/nvim-code-action-menu",
+    url = "https://github.com/weilbith/nvim-code-action-menu"
+  },
   ["nvim-lspconfig"] = {
     loaded = true,
     path = "/home/coukou/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
