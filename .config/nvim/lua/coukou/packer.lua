@@ -62,7 +62,6 @@ return require("packer").startup(function(use)
 			{ "hrsh7th/nvim-cmp" },
 			{ "ray-x/lsp_signature.nvim" },
 			{ "ray-x/cmp-treesitter" },
-			{ "https://git.sr.ht/~whynothugo/lsp_lines.nvim" },
 			{ "hrsh7th/cmp-buffer" },
 			{ "hrsh7th/cmp-path" },
 			{ "saadparwaiz1/cmp_luasnip" },

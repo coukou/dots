@@ -92,10 +92,8 @@ end
 
 require("lsp-zero").set_sign_icons()
 vim.diagnostic.config(require("lsp-zero").defaults.diagnostics({
-	virtual_text = false,
+	virtual_text = true,
 }))
-
-require("lsp_lines").setup()
 
 ---
 -- Snippet config
