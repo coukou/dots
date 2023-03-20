@@ -115,8 +115,8 @@ vim.opt.completeopt = { "menu", "menuone", "noselect" }
 local cmp = require("cmp")
 local cmp_config = require("lsp-zero").defaults.cmp_config({
 	sources = {
-		{ name = "path" },
-		{ name = "treesitter" },
+		-- { name = "path" },
+		-- { name = "treesitter" },
 		{ name = "nvim_lsp", keyword_length = 1 },
 		-- { name = "buffer", keyword_length = 3 },
 		{ name = "luasnip", keyword_length = 2 },
