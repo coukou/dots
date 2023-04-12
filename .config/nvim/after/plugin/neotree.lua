@@ -1,9 +1,3 @@
-local neotree = require("neo-tree")
+require("neo-tree").setup({})
 
-neotree.setup({
-    close_if_last_window = false,
-})
-
-
-vim.cmd([[nnoremap \ :Neotree reveal<cr>]])
-
+vim.cmd([[nnoremap \ :NeoTreeFocus<cr>]])
