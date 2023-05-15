@@ -1,8 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =6
-let g:netrw_dirhist_6='/home/coukou/Android/Sdk/platform-tools'
-let g:netrw_dirhist_5='/home/coukou/workspaces/coukou/planee/scrappers/node/index_attractions'
-let g:netrw_dirhist_4='/home/coukou/workspaces/freelance/except6on/pages/girl/_id'
-let g:netrw_dirhist_3='/home/coukou/workspaces/freelance/except6on/pages/girl'
-let g:netrw_dirhist_2='/home/coukou/workspaces/freelance/except6on/components'
-let g:netrw_dirhist_1='/home/coukou/.vim'
